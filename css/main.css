@@ -3,12 +3,17 @@
 	padding: 0;
 }
 .logo{
-	width: 80px;
-	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	width: 7%;
+}
+.logo img {
+  height: auto;
+  width: 100%;
 }
 body{
     margin: 0;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Trebuchet MS',sans-serif;
 }
 .container{
 	height: 100vh;
@@ -16,46 +21,90 @@ body{
 	background-image: url(../images/background.jpg);
 	background-position: center;
 	background-size: cover;
-	padding-left: 5%;
-	padding-right: 5%;
 	box-sizing: border-box;
 	position: relative;
 }
-.navbar{
-	width: 100%;
-	height: 15vh;
-	margin: auto;
-	display: flex;
-	align-items: center;
+
+.nav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 92%;
 }
-.navbar .btn{
+
+.nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #0587f2;
+}
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #52aefa;
+}
+
+.homeContainer{
 	display: inline-block;
-	background: linear-gradient(45deg, #325afa, #55e66b);
+	vertical-align: middle;
+	padding: 50px;
+}
+.homeContainer img{
+	width: 70%;
+	height: auto;
+	border: 10px solid #515b63;
+	border-radius: 20px;
+
+}
+.homeNameText{
+	vertical-align: middle;
+	background-color: lightgrey;
+	width: 210px;
+	padding: 25px;
+	margin: 20px;
+	border-radius: 25px;
+}
+.homeText{
+	vertical-align: middle;
+	background-color: lightgrey;
+	width: 400px;
+	padding: 25px;
+	margin:5px;
+	margin-left: 50px;
+	border-radius: 25px;
+	font-size: 115%;
+}
+.homebtn{
+	display: inline-block;
+	background: #0587f2;
 	border-radius: 6px;
-	padding: 10px 20px;
+	padding: 10px;
 	box-sizing: border-box;
 	text-decoration: none;
 	color: #fff;
-	box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+	margin-left: 180px;
+	font-size: 90%;
 }
-nav{
-	flex: 1;
-	padding-left: 60px;
+.homebtn:hover{
+	background: #52aefa;
 }
-nav ul li{
-	display: inline-block;
-	list-styles: none;
-	margin: 0px 20px;
-}
-nav ul li a{
-	text-decoration: none;
-	color: #333;
-}
+
 .mainBox{
 	background-color: lightgrey;
 	width: 300px;
-	border: 15px solid green;
+	border: 10px solid green;
 	padding: 50px;
 	margin: 20px;
+	border-radius: 25px;
 }
 
