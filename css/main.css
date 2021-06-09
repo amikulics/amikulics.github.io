@@ -9,7 +9,9 @@
 }
 .logo img {
   height: auto;
-  width: 100%;
+  width: 7%;
+  position:fixed;
+  top:0;
 }
 body{
     margin: 0;
@@ -21,6 +23,8 @@ body{
 	background-image: url(../images/background.jpg);
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
+	min-height: 120vh;
 	box-sizing: border-box;
 	position: relative;
 }
@@ -29,8 +33,9 @@ body{
   display: inline-block;
   vertical-align: middle;
   width: 92%;
+  position:fixed;
+  top:25;
 }
-
 .nav ul{
 	list-style-type: none;
 	margin: 0;
@@ -41,7 +46,6 @@ body{
 .nav li {
   float: left;
 }
-
 .nav li a {
   display: block;
   color: white;
@@ -49,11 +53,18 @@ body{
   padding: 14px 16px;
   text-decoration: none;
 }
-
 .nav li a:hover {
   background-color: #52aefa;
 }
-
+.navGrad{
+	background-image: linear-gradient(rgba(30,77,150,1), rgba(11,28,54,0));
+	position: sticky;
+	top:0;
+	height: 120px;
+}
+.navMargin{
+	margin-top: 85px;
+}
 .homeContainer{
 	display: inline-block;
 	vertical-align: middle;
@@ -63,8 +74,7 @@ body{
 	width: 70%;
 	height: auto;
 	border: 10px solid #515b63;
-	border-radius: 20px;
-
+	border-radius: 10px;
 }
 .homeNameText{
 	vertical-align: middle;
@@ -99,12 +109,28 @@ body{
 	background: #52aefa;
 }
 
-.mainBox{
-	background-color: lightgrey;
-	width: 300px;
-	border: 10px solid green;
-	padding: 50px;
-	margin: 20px;
+.aboutBox{
+	background-color: #1a3b6e;
+	margin: auto;
+	width: 675px;
+	border: 10px solid #608dd1;
+	padding: 25px;
+	margin-bottom: 20px;
 	border-radius: 25px;
+}
+.aboutDetailsBox{
+	background-color: lightgrey;
+	width: 650px;
+	padding: 10px;
+	border-radius: 25px;
+	display: inline-block;
+}
+.aboutDetailsBox img{
+	width: 120px;
+	float: right;
+}
+.aboutHeading{
+	font-size: 145%;
+	font-weight: bold;
 }
 
